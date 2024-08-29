@@ -1,143 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Details</title>
+    <meta
+      name="description"
+      content="Detailed view of a project from the portfolio."
+    />
+    <meta name="keywords" content="portfolio, project, web design, details" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Details</title>
-  <meta name="description" content="Detailed view of a project from the portfolio.">
-  <meta name="keywords" content="portfolio, project, web design, details">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-</head>
+    <style>
+      /* Custom Styles */
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f8f9fa;
+      }
 
-<body>
+      .header,
+      .footer {
+        background-color: #343a40;
+        color: #ffffff;
+        padding: 10px 0;
+      }
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-inner-pages">
-    <div class="container d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo">
-        <img src="assets/img/Capture.JPG" alt="Logo" class="img-fluid">
-      </a>
-      <!-- Uncomment below if you prefer to use a text logo -->
-      <!-- <h1 class="logo"><a href="index.html">Folio</a></h1> -->
+      .header .logo img {
+        max-width: 150px;
+      }
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link active scrollto" href="index.html#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="index.html#journal">Blog</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-    </div>
-  </header><!-- End Header -->
+      .header .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
 
-  <main id="main">
+      .header .navbar a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 500;
+      }
 
-    <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs"></section><!-- End Breadcrumbs Section -->
+      .portfolio-details {
+        padding: 30px 15px;
+        max-width: 800px;
+        margin: auto;
+      }
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+      .portfolio-details img {
+        width: 100%;
+        height: auto;
+      }
+
+      .portfolio-info,
+      .portfolio-description {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+      }
+
+      .portfolio-info ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .portfolio-info ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer {
+        text-align: center;
+      }
+
+      .footer .socials-media {
+        margin-bottom: 10px;
+      }
+
+      .footer .socials-media a {
+        color: #ffffff;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+
+      .footer .credits {
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo"
+          ><img
+            src="assets/img/Capture.JPG"
+            alt="Anyine Christopher - Engineer, UX/UI Designer"
+            class="img-fluid"
+        /></a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#portfolio">Portfolio</a>
+            </li>
+            <li><a class="nav-link scrollto" href="index.html#journal">Blog</a></li>
+            <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+      <!-- ======= Portfolio Details Section ======= -->
+      <section class="portfolio-details">
+        <div class="container">
+          <div class="portfolio-details-slider">
+            <img
+              src="assets/img/portfolio/Coding-in-Africa.jpg"
+              alt="Portfolio detail 1"
+            />
+            <img
+              src="assets/img/portfolio/web-design-technology-browsing-programming-concept_53876-163260.avif"
+              alt="Portfolio detail 3"
+            />
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project Information</h3>
+            <ul>
+              <li><strong>Category:</strong> Web Design</li>
+              <li><strong>Client:</strong> ACT Rentals</li>
+              <li><strong>Project Date:</strong> March 1, 2020</li>
+              <li>
+                <strong>Project URL:</strong> <a href="https://bytesapien14.github.io/House-Rental-Management-Php/">Rental House Web Application</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="portfolio-description">
+            <h2>Project Overview</h2>
+            <p>
+              This project involved creating a comprehensive web design solution
+              for ACT Rental Company. The design aimed to enhance user experience while
+              showcasing the company's services effectively. Key features
+              include a responsive layout, intuitive navigation, and a modern
+              aesthetic.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Details Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer class="footer">
       <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="Portfolio detail 1">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="Portfolio detail 2">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="Portfolio detail 3">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
-                Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia
-                accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt
-                eius.
-              </p>
-            </div>
-          </div>
-
+        <div class="socials-media">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
         </div>
 
+        <p>&copy; 2024 Anyine Christopher. All rights reserved.</p>
       </div>
-    </section><!-- End Portfolio Details Section -->
+    </footer>
+    <!-- End Footer -->
 
-  </main><!-- End #main -->
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="text-center">
-    <div class="container">
-      <div class="socials-media text-center">
-        <ul class="list-unstyled">
-          <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-          <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-          <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-          <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-        </ul>
-      </div>
-
-      <p>&copy; Copyrights Folio. All rights reserved.</p>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
